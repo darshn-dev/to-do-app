@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:weightSum="100"
+    android:layout_marginBottom="8dp"
+    android:orientation="horizontal"
+    android:background="#CDDC39"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#FF9800"
+        ></View>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="75"
+        android:id="@+id/tv_title"
+        android:textSize="23sp"
+        android:lines="1"
+        android:text="Sometex"
+
+        android:textColor="#000000"
+
+        ></TextView>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+
+        ></View>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:id="@+id/tv_timestamp"
+        android:textSize="10sp"
+
+        android:text="Dec 20"
+        android:padding="10dp"
+
+
+        ></TextView>
+
+</LinearLayout>

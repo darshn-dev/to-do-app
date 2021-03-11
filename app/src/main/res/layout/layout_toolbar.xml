@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:weightSum="100"
+    android:orientation="horizontal"
+    android:background="@color/design_default_color_primary_variant"
+    android:layout_gravity="center_horizontal"
+    >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="10"
+        android:visibility="visible"
+        android:id="@+id/img_back_container"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:id="@+id/img_back"
+            ></ImageButton>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="10"
+        android:visibility="gone"
+        android:id="@+id/img_check_container"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_baseline_check_24"
+            android:id="@+id/img_check"
+            ></ImageButton>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="85"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        android:text="sample text"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_title"
+    android:visibility="gone"
+        ></TextView>
+
+
+    <EditText
+        android:layout_margin="8dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="85"
+        android:textColor="@color/black"
+        android:padding="2dp"
+        android:id="@+id/et_title"
+        android:textSize="20sp"
+        android:text="sample text"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+
+        ></EditText>
+
+
+
+
+</LinearLayout>
